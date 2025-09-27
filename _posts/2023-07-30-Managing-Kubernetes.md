@@ -7,7 +7,7 @@ categories: [Software, Containers, Kubernetes]
 excerpt_separator: "<!--more-->"
 ---
 
-According to kubernetes.io, {% include pullquote.html quote="Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling and management of containerized applications" %}
+According to kubernetes.io, <blockquote>Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling and management of containerized applications</blockquote>
 
 Kubernetes is the defacto container orchestration platform today. It is a powerful tool that can help you manage your applications more efficiently and reliably. Kubernetes uses a declarative approach to configuration, which means that you define the desired state of your application and Kubernetes will work to make sure that the actual state matches the desired state. This makes it easy to deploy changes to your applications and to scale your applications up or down as needed. 
 
@@ -58,8 +58,10 @@ Before we try to manage this cluster in rancher, lets make sure that the rancher
 
 First, lets get the internal ip address of the rancher server
 
-    $> docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' rancher.docker.internal
+{% raw %}
+    $> docker inspect -f '''{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}''' rancher.docker.internal
     172.18.0.2
+{% endraw %}
 
 Then lets get the CoreDNS configmap
 
@@ -118,4 +120,4 @@ As you can see, rancher installs a bunch of tools in the cattle-system namespace
 
 ![Rancher Dashboard mykube](/images/rancher_2.jpg "Rancher Dashboard now shows the imported cluster")
 
-Now you are all set to manage the cluster using rancher. 
+Now you are all set to manage the cluster using rancher.

@@ -1,20 +1,23 @@
-
 //
 // VARIABLES
 //
 
 // Colors
-$blue: #4183C4;
+$primary-color: #3A506B;
+$secondary-color: #5BC0BE;
+$accent-color: #FFC107;
 
 // Grays
 $black: #000;
 $darkerGray: #222;
 $darkGray: #333;
 $gray: #666;
-$lightGray: #eee;
+$lightGray: #f0f0f0; 
 $white: #fff;
 
 // Font stacks
+$heading-font: 'Merriweather', Georgia, serif;
+$body-font: 'Lato', Helvetica, Arial, sans-serif;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;

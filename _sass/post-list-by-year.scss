@@ -1,0 +1,25 @@
+.post-list-by-year {
+    .year {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .post-list {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            margin-bottom: 1rem;
+
+            h3 {
+                margin-bottom: 0.25rem;
+            }
+
+            time {
+                color: #888;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

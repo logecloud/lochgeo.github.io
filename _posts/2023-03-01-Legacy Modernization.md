@@ -10,7 +10,7 @@ Legacy software is a critical part of many businesses and in many cases there is
 
 Legacy applications are usually using older programming languages that are no longer taught in universities. This means that new developers won't have the skills needed to work on these types of projects, which makes hiring new employees more difficult. Also, the cost of maintaining legacy systems gets high with time because there aren't enough people with knowledge about how they work anymore.
 
-Modernizing these legacy software is a big challenge that most companies have to face sooner or later. Lets look at some of the steps that you can take for a safe migration to modern software architecture.
+Modernizing these legacy software is a big challenge that most companies have to face sooner or later. Let's look at some of the steps that you can take for a safe migration to modern software architecture.
 
 ### Preparing for Modernization
 
@@ -33,12 +33,12 @@ The first step in modernizing legacy software is choosing the right software / a
 
 ### Testing and Quality Assurance
 
-Testing and quality assurance are essential to the success of any software modernization project. Its important to include adding automated test cases as a part of your overall migration strategy. This will help you ensure that the new application is behaving as expected and to quickly identify any issues if they arise.
+Testing and quality assurance are essential to the success of any software modernization project. It's important to include adding automated test cases as a part of your overall migration strategy. This will help you ensure that the new application is behaving as expected and to quickly identify any issues if they arise.
 
-Its also important to test for scalability and performance. Modernized applications should be able to scale up or down depending on demand, so it's important that you test them under a variety of load conditions. You should also make sure that they perform well when handling large amounts of data.
+It's also important to test for scalability and performance. Modernized applications should be able to scale up or down depending on demand, so it's important that you test them under a variety of load conditions. You should also make sure that they perform well when handling large amounts of data.
 
 ### Managing Change
 
-What makes of breaks a modernisation project is usually your ability manage that change within your organisation's working culture. It can be a major challenge to change the way people work and think, but it's essential if you want to successfully migrate to a new platform. You need to identify key stakeholders and educate them about what will be changing and why. You should also make sure that they're on board with your plans before you start making any changes.
+What makes or breaks a modernisation project is usually your ability to manage that change within your organisation's working culture. It can be a major challenge to change the way people work and think, but it's essential if you want to successfully migrate to a new platform. You need to identify key stakeholders and educate them about what will be changing and why. You should also make sure that they're on board with your plans before you start making any changes.
 
 In conclusion, the benefits of modernizing legacy software are clear. You can improve your business and make them more efficient, while also reducing costs and increasing revenue. Yet, it can be daunting at times to get people to change their minds. 

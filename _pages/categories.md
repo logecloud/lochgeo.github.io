@@ -4,21 +4,24 @@ permalink: /categories/
 title: Categories
 ---
 
+<ul class="category-list">
+  {% for category in site.categories %}
+    <li>
+      <a href="#{{ category | first | slugify }}">
+        {{ category | first }} ({{ category | last | size }})
+      </a>
+    </li>
+  {% endfor %}
+</ul>
 
-<div id="archives">
 {% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
-    
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{% if post.title and post.title != "" %}{{post.title}}{% else %}{{post.excerpt |strip_html}}{%endif%}</a></h4>
-    </article>
+  <h2 id="{{ category | first | slugify }}">{{ category | first }}</h2>
+  <ul class="post-list">
+    {% for post in category.last %}
+      <li>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+      </li>
     {% endfor %}
-  </div>
+  </ul>
 {% endfor %}
-</div>

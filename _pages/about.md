@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-> {% include pullquote.html quote="People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones - Donald Knuth" %}
+> People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.
+> 
+> —Donald Knuth
 
 Hello, I’m a seasoned software developer from Bangalore, India, with a passion for cloud technologies. For the past 18 years, I have been working in the IT industry, creating and delivering innovative cloud solutions for the banking sector. I have extensive knowledge and experience in using various cloud platforms and tools, such as Docker, Kubernetes, etc., as well as programming languages such as Python, C#, etc.
 
