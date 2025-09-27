@@ -13,28 +13,34 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+name: lochgeo's blog
 title: lochgeo's blog
 description: >- # this means to ignore newlines until "baseurl:"
   The code behind the magic
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lochgeo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/images/lg-logos_transparent.png"
+avatar: "/images/lg-logos_transparent.png"
 
 # Author
 author:
   name: lochgeo
   avatar: "/images/lg-logos_transparent.png"
 
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Pagination settings
+paginate: 5
+paginate_path: "/page:num/"
+
 # Build settings
-remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate-v2
-  - jekyll-archives
-  - jekyll-remote-theme
-  - jekyll-include-cache
+  - jekyll-paginate
 
 # Kramdown settings
 kramdown:
@@ -43,31 +49,8 @@ kramdown:
   syntax_highlighter_opts:
     css_class: 'highlight'
 
-# Pagination
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: /page/:num/
-
-# Archives
-jekyll-archives:
-  enabled:
-    - year
-    - month
-    - day
-    - categories
-    - tags
-  layout: archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
-
-
 # Navigation
-main:
+navigation:
   - title: "Home"
     url: "/"
   - title: "About"
@@ -75,18 +58,12 @@ main:
   - title: "Search"
     url: "/search/"
 
-# Footer links
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/lochgeo/lochgeo.github.io"
-    - label: "X"
-      icon: "fab fa-fw fa-x"
-      url: "https://x.com/lochgeo"
+# Social links
+github_username: lochgeo
+twitter_username: lochgeo
 
 # Google Analytics
-google_analytics_ga4: G-W2NYSGMPTH
+google_analytics: G-W2NYSGMPTH
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

@@ -1,0 +1,13 @@
+.svg-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  fill: rgba(255,255,255,0.8);
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    fill: variables.$secondary-color;
+    transform: translateY(-2px);
+  }
+}

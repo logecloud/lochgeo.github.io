@@ -1,0 +1,33 @@
+.highlight {
+  background-color: #f8f8f8;
+  border: 1px solid #e1e1e8;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  
+  pre {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+  }
+  
+  code {
+    background: transparent;
+    padding: 0;
+    border: none;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+}
+
+// Inline code
+code {
+  background-color: #f1f1f1;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+}
