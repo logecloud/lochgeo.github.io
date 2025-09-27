@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Software Architectures"
 date:   2023-01-10 10:22:00
 comments: True

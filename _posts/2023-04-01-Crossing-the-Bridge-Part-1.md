@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Crossing the Bridge - Challenges of transitioning from an Individual Contributor to Management Role"
 date:   2023-04-19 14:43:00
 comments: True

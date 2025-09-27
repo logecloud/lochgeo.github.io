@@ -1,85 +1,96 @@
+# Welcome to Jekyll!
 #
-# This file contains configuration flags to customize your site
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
 #
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Name of your site (displayed in the header)
-name: lochgeo's blog
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: lochgeo's blog
+description: >- # this means to ignore newlines until "baseurl:"
+  The code behind the magic
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lochgeo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+logo: "/images/lg-logos_transparent.png"
 
-# Name of the author
-author: lochgeo
+# Author
+author:
+  name: lochgeo
+  avatar: "/images/lg-logos_transparent.png"
 
-# Short bio or description (displayed in the header)
-description: The code behind the magic
+# Build settings
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate-v2
+  - jekyll-archives
+  - jekyll-remote-theme
+  - jekyll-include-cache
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/lg-logos_transparent.png
-logo: /images/lg-logos_transparent.png
-
-# Navigation links
-navigation:
-  - title: Home
-    url: /
-  - title: Search
-    url: /search
-  - title: About
-    url: /about
-  - title: Archive
-    url: /archive
-
-#
-# Flags below are optional
-#
-
-# Includes an icon in the footer for each username you enter
-footer-links:
-  github: lochgeo/lochgeo.github.io
-  rss: rss
-  x: lochgeo
-
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics_ga4: G-W2NYSGMPTH
-
-# Your website URL (e.g. http://amitmerchant1990.github.io or http://www.amitmerchant.com)
-# Used for Sitemap.xml and your RSS feed
-url: https://lochgeo.github.io
-enforce_ssl: https://lochgeo.github.io
-
-#
-# !! You don't need to change any of the configuration flags below !!
-#
-
-permalink: /:title/
-
-# The release of Jekyll Now that you're using
-version: v1.2.0
-
-# Jekyll 3 now only supports Kramdown for Markdown
+# Kramdown settings
 kramdown:
-  # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
-  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
   syntax_highlighter: rouge
   syntax_highlighter_opts:
-    # Use existing pygments syntax highlighting css
     css_class: 'highlight'
 
-# Set the Sass partials directory, as we're using @imports
-sass:
-  style: :compressed # You might prefer to minify using :compressed
+# Pagination
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: /page/:num/
 
-# Use the following plug-ins
-plugins:
-  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
-  - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
-  - jekyll-seo-tag
-  - jekyll-paginate
+# Archives
+jekyll-archives:
+  enabled:
+    - year
+    - month
+    - day
+    - categories
+    - tags
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
 
-include: ['_pages']
 
-paginate: 6
-paginate_path: /page:num/
+# Navigation
+main:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Search"
+    url: "/search/"
 
-# Exclude these files from your production _site
+# Footer links
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/lochgeo/lochgeo.github.io"
+    - label: "X"
+      icon: "fab fa-fw fa-x"
+      url: "https://x.com/lochgeo"
+
+# Google Analytics
+google_analytics_ga4: G-W2NYSGMPTH
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
 exclude:
   - Gemfile
   - Gemfile.lock

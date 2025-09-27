@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Managing Kubernetes using Rancher"
 date:   2023-07-30 01:22:00
 comments: True

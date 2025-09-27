@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Bearer, pop the tokens"
 date:   2023-06-20 01:22:00
 comments: True
